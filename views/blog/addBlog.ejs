@@ -1,0 +1,17 @@
+<% layout('layouts/boilerplate')%>
+
+
+<div class=" mt-5 container" style=" width :70%">
+  <h1 class="text-center">Create blog</h1>
+
+<form class="d-flex flex-column mt-3" action="/blogs" method="POST">
+
+  <label class=" form-label" for="title">Title</label>
+  <input class="form-control" type="text" name="title" />
+  <label class="form-label" for="content">Content</label>
+  <textarea class="form-control type="text" name="content" ></textarea>
+  <button class=" mx-auto mt-3 btn btn-dark" style="width:20%">Submit</button>
+
+</form>
+
+</div>

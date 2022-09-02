@@ -1,0 +1,17 @@
+<% layout('layouts/boilerplate')%>
+
+<div class="mt-5 container">
+  <h1 class="text-center">All blogs</h1>
+  <ul>
+    <div id="blogI" class="mx-auto mt-3 card" style="width: 70%">
+      <div class="card-body">
+        <h5 class="card-title"><%=blog.title%></h5>
+        <h6 class="card-subtitle mb-2 text-muted">21 Aug</h6>
+        <p class="card-text"><%=blog.content%></p>
+        <form action="/blogs/<%=blog.id%>" method="DELETE">
+          <button class="btn btn-dark">Delete Blog</button>
+        </form>
+      </div>
+    </div>
+  </ul>
+</div>
